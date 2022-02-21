@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: crud_rck
+      POSTGRES_USER: crud_rck
+      POSTGRES_PASSWORD: crud_rck
+    ports:
+      - 5432
+    volumes:
+      - ./database/data:/var/lib/postgresql/data
