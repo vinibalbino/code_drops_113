@@ -22,8 +22,14 @@ Faça o build das imagens Docker utilizadas no projeto e inicie os containers da
 docker-compose up -d
 ```
 
-Logo apos terminar execute o comando:
+Logo apos terminar execute o comando para instalar as dependencias e rodar as migrations:
 
 ```bash
-yarn
+yarn && yarn typeorm migration:run
+```
+
+crie um arquivo na raiz do projeto chamado **.env** do seu projeto com os dados que estão no **.env.example** e para rodar o projeto execute o comando:
+
+```bash
+yarn run dev
 ```
