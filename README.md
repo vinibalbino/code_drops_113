@@ -28,7 +28,7 @@ Logo apos terminar execute o comando para instalar as dependencias e rodar as mi
 yarn && yarn typeorm migration:run
 ```
 
-crie um arquivo chamado .env na raiz do seu projeto com os dados que estão no .env.example e para rodar o projeto e so
+crie um arquivo na raiz do projeto chamado **.env** do seu projeto com os dados que estão no **.env.example** e para rodar o projeto execute o comando:
 
 ```bash
 yarn run dev
