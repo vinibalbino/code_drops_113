@@ -2,6 +2,7 @@ import { Router } from "express";
 import { CreateCategoryController } from "./controllers/CreateCategoryController";
 import { CreateVideoController } from "./controllers/CreateVideoController";
 import { DeleteCategoryController } from "./controllers/DeleteCategoryController";
+import { DeleteVideoController } from "./controllers/DeleteVideoController";
 import { GetAllCategoriesController } from "./controllers/GetAllCategoryController";
 import { GetAllVideosController } from "./controllers/GetAllVideosController";
 import { UpdateCategoryController } from "./controllers/UpdateCategoryController";
@@ -22,6 +23,7 @@ routes.put("/categories/:id", new UpdateCategoryController().handle);
 
 routes.get("/videos", new GetAllVideosController().handle);
 routes.post("/videos", new CreateVideoController().handle);
+routes.delete("/videos/:id", new DeleteVideoController().handle);
 routes.put("/videos/:id", new UpdateVideoController().handle);
 
 export { routes };
