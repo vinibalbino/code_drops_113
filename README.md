@@ -21,3 +21,9 @@ Faça o build das imagens Docker utilizadas no projeto e inicie os containers da
 ```bash
 docker-compose up -d
 ```
+
+Logo apos terminar execute o comando:
+
+```bash
+yarn
+```
